@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja" id="doc">
+    <head>
+        <title>難読漢字タイピング</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="nattyfav.ico" type="image/vnd.microsoft.icon">
+        <meta name="viewport" content="width=device-width">
+        <script>
+            window.addEventListener('keydown',function(Event){
+                let kc = Event.key;
+                if(kc == ' '){
+                    window.location = 'type.html'
+                }
+            })
+        </script>
+        <style>
+            html{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color:#00a968;
+                width: 100%;
+                height: 100%;
+            }
+            #hdiv{
+                text-align: center;
+                width: 100%;
+                margin-top: 0.3em;
+                display: inline-block;
+                font-size: 7vw;
+                color: aqua;
+                text-shadow: 4px 4px 2px rgba(0,0,0,0.5);
+                margin-bottom: 0em;
+            }
+            #sp{
+                text-align: center;
+                color:gold;
+                text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+                font-size: 3vw;
+                margin: 0.3em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="hdiv">難読漢字タイピング</div>
+        <p id="sp">スペースキーを押して開始</p>
+        <script>
+            document.getElementById('sp').click();
+        </script>
+    </body>
+</html>
