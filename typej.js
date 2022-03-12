@@ -44,6 +44,7 @@ typ.click();
                  document.getElementById('time').style.display = 'none';
                  document.getElementById('typ').style.display = 'none';
                  document.getElementById('lastone').innerHTML = 'あなたは10問を'+min+'分'+sec+'秒で解きました。';
+                 document.getElementById('lastone').style.display = 'inline-block';
                  document.getElementById('a').style.display = 'inline';
               }
               typ.innerHTML = '';
